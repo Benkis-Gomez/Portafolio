@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Benkis</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SOFTWARES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>BENKIS GOMEZ</h1>
+            <h2>Ingeniero en Tic´s - Programador Jr.</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-solid fa-code"></i></a>
+                <a href="#"><i class="fa-solid fa-microchip"></i></a>
+                <a href="#"><i class="fa-solid fa-shield"></i></a>
+                <a href="#"><i class="fa-solid fa-network-wired"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, me llamo Benkis Gomez Martinez.</span> Soy Ingeniero en Tecnologías de la Información y Comunicación
+                 con experiencia en soporte técnico e infraestructura de TI. Con capacidad para coordinar equipos, mantener la 
+                 operatividad de la infraestructura tecnológica, desarrollar sistemas y gestionar proyectos de TI. Experiencia en
+                  mantenimiento de equipos, redes, servidores, y desarrollo de sistemas internos. Altamente orientado al servicio 
+                  y solución de problemas en entornos presenciales y remotos.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento</strong>
+                            21-08-1999
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            55 667386 20
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            benkisgomez325@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            San Lorenzo Río Ténco, CUAUTITLÁN - IZCALLI
+                        </li>
+                        <li>
+                            <strong>Ultimo puesto</strong>
+                            <span>Becario</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                            <span>PROGRAMAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-question" aria-hidden="true"></i>
+                            <span>  APRENDER</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a Download href="CV-Benkis-GM.pdf"  Style="text-decoration:none;" Download>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button></a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Software y lenguajes</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Lenguajes</h3>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Tecnologías y software</h3>
+                    <div class="skill">
+                        <span>Office</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Visual Studio Code</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Net Beans</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL Server 2012</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Active Directory</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>CURSO DE DESARROLLO DE APPS MÓVILES</h4>
+                        <span class="casa">GOOGLE</span>
+                        <span class="fecha">2022 - Actual</span>
+                        <p>Actualmente estoy estudiando un curso de desarrollo de aplicaciones móviles de Android con certificación de Google.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>INGENIERO EN TIC´S</h4>
+                        <span class="casa">UMB - Tepotzotlán</span>
+                        <span class="fecha">2017 - 2022</span>
+                        <p>En la carrera de tecnologías de la Información y las Comunicaciones tuve la oportunidad de crear distintos sistemas con diferentes propósitos. Participe en el desarrollo de un proyecto sobre la apertura de cerraduras por comunicación bluetooth desde un teléfono celular utilizando la huella dactilar este proyecto fue llevado a la feria de emprendimiento y desarrollo de Toluca en el 2019.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>TÉCNICO EN PROGRAMACIÓN</h4>
+                        <span class="casa">CECyTEM - Cuautitlán</span>
+                        <span class="fecha">2014 - 2017</span>
+                        <p>Estudié la carrera técnica de programación en el bachillerato y pude desarrollar varios sistemas con conexión a base de datos en diferentes entornos como Eclipse, Net beans, Visual Basic Studio y diferentes lenguajes como C++, HTML, CSS, PHP, Java, entre otros. Administración de sistemas operativos como Windows, Ubuntu, Debian, y algunos más en entorno de máquinas virtuales e instalación directas a equipos de cómputo.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Analista - Coordinador</h4>
+                        <span class="casa">Naturasol</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>Estuve 3 meses como analista de sistemas y posteriormente 1 año 6 meses aproximadamente como Coordinador de soporte e infraestrructura. Tuve 4 analistas a mi cargo y estos estaban distribuidos entre 3 plantas y uno en donde yo estaba, dando un total de 3 plantas y 1 cedis a mi cargo. Se realizaron imprementaciones de redes, instalaciones de AP, Switch, cableados y mantenimiento de la red, asi como memorias tecnicas, mapeos, etc.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista - Coordinador</h4>
+                        <span class="casa">CEMPOSA</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>Trabaje como coordinador  en el área de sistemas de la empresa Cemposa, desempeñando diversas tareas como programar, apoyo a usuarios de manera presencial y remota, inventario de equipos de cómputo y teléfonos celulares, instalación y cambio de SSD y HDD, entre otras.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>AYUDANTE DE INGENIERO EN AUTOMATIZACIÓN Y CONTROL</h4>
+                        <span class="casa">Independiente</span>
+                        <span class="fecha">2021 - 2021</span>
+                        <p>Realizaba instalaciones, actualizaciones y mantenimientos a equipos de cómputo.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>PROGRAMADOR</h4>
+                        <span class="casa">Miscelánea La Cruz.</span>
+                        <span class="fecha">2019 - 2019</span>
+                        <p>El dueño de una tienda pidió desarrollar un sistema para llevar un registro de las ventas que se realizan a diario y tener un control de stock e inventario, el sistema se desarrolló en Net Beans - Java y MySQL.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>PROGRAMADOR</h4>
+                        <span class="casa">Servicio social.</span>
+                        <span class="fecha">2018 - 2018</span>
+                        <p>Realice mi servicio social en la universidad donde yo estudiaba y desarrolle un sistema gestor de material y prestamos de libros para la biblioteca escolar.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Intranet CEMPOSA</h3>
+                        <p>Desarrollo e implementación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Gestion de vacaciones y ausencias de empleados</h3>
+                        <p>Implementación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Base de datos phpMyAdmin</h3>
+                        <p>Desarrollo</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p7.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Tickets de soporte técnico</h3>
+                        <p>Desarrollo e implementación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p9.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Administración de redes empresariales</h3>
+                        <p>Gestión y Administración</p>
+                    </div>
+                </div>         
+                <div class="proyecto">
+                    <img src="img/p11.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de tickets a empresas</h3>
+                        <p>Desarrollo e implementación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>SSD y HDD</h3>
+                        <p>Cambio e instalación de dispostvos</p>
+                    </div>
+                </div>       
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>S.O. Ubuntu</h3>
+                        <p>Instalación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>S.O. Windows 10</h3>
+                        <p>Instalación</p>
+                    </div>
+                </div>
+                
+                
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto"> 
+        <h2>CONTACTO</h2>
+        <div class="contenido-seccion">
+            <!-- Mapa -->
+            <div class="col">    
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Edo. México, Cuautitlan Izcalli
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        Celular: 55 8014 5952 
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        Correo: benkisgomez325@gmail.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-solid fa-code"></i></a>
+            <a href="#"><i class="fa-solid fa-microchip"></i></a>
+            <a href="#"><i class="fa-solid fa-shield"></i></a>
+            <a href="#"><i class="fa-solid fa-network-wired"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
